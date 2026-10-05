@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="id"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Limfatik &amp; Imunitas</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-dna"></i> BioEdu</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#komponen">Komponen</a></li>
+            <li><a href="#organ">Organ</a></li>
+            <li><a href="#imunitas">Imunitas</a></li>
+            <li><a href="#antibodi">Antibodi</a></li>
+            <li><a href="#kelainan">Kelainan</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="hero-content fade-in">
+            <h1>Sistem Limfatik dan Imunitas</h1>
+            <p>Mekanisme pertahanan luar biasa tubuh manusia. Pelajari komponen, sirkulasi limfa, hingga bagaimana tubuh melawan patogen dan penyakit.[cite: 1, 2]</p>
+            <a href="#komponen" class="btn-primary">Mulai Belajar <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-image fade-in">
+            <!-- Placeholder gambar ilustrasi -->
+            <img src="assets/images/gambar-1-jalur-limfa.jpg" alt="Jalur Aliran Limfa" class="img-responsive floating">
+            <p class="caption">Gambar 1. Jalur Aliran Limfa[cite: 5, 8]</p>
+        </div>
+    </header>
+
+    <!-- Section 1: Komponen & Aliran Limfa -->
+    <section id="komponen" class="container reveal">
+        <div class="section-title">
+            <h2>Komponen &amp; Aliran Limfa</h2>
+            <p>Sistem getah bening yang menunjang kekebalan tubuh[cite: 7]</p>
+        </div>
+        <div class="card-grid">
+            <div class="info-card">
+                <i class="fas fa-water icon-large"></i>
+                <h3>Pembentukan Limfa</h3>
+                <p>Berasal dari plasma darah arteri yang kaya nutrisi. Sekitar 10% cairan jaringan yang tertinggal menjadi limfe yang membawa produk metabolisme untuk dibuang[cite: 9, 10].</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-project-diagram icon-large"></i>
+                <h3>Jalur Aliran</h3>
+                <p>Mengalir dari ruang interstisial ke kapiler limfatik, lalu menuju kelenjar getah bening untuk disaring dari racun dan bakteri berbahaya, sebelum dikembalikan ke aliran darah[cite: 7, 10].</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-shield-virus icon-large"></i>
+                <h3>Fungsi Utama</h3>
+                <ul class="custom-list">
+                    <li>Mengembalikan kelebihan cairan interstitial[cite: 7].</li>
+                    <li>Membawa lemak emulsi dari usus[cite: 7].</li>
+                    <li>Menyaring dan menghancurkan mikroorganisme[cite: 7].</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Organ Limfatik -->
+    <section id="organ" class="container bg-light reveal">
+        <div class="section-title">
+            <h2>Organ Limfatik</h2>
+            <p>Tempat pematangan dan penyimpanan sel-sel imun[cite: 7]</p>
+        </div>
+        
+        <!-- Tabs for Primer vs Sekunder -->
+        <div class="tabs-container">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="openTab(event, 'primer')">Organ Primer</button>
+                <button class="tab-btn" onclick="openTab(event, 'sekunder')">Organ Sekunder</button>
+            </div>
+            
+            <div id="primer" class="tab-content active">
+                <div class="split-content">
+                    <div>
+                        <h3>Sumsum Tulang (Bone Marrow)</h3>
+                        <p>Sumber utama limfosit B dan T. Limfosit B menetap di sini hingga dewasa, sementara limfosit T bermigrasi ke timus[cite: 7].</p>
+                        <h3>Timus</h3>
+                        <p>Organ bilobed di atas jantung. Tempat pematangan limfosit T. Timus akan mengalami atrofi (menyusut) setelah pubertas[cite: 7, 11].</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/gambar-1.2-timus.jpg" alt="Organ Timus" class="img-responsive radius">
+                        <p class="caption">Gambar 1.2. Timus yang terletak di atas jantung[cite: 11]</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="sekunder" class="tab-content" style="display:none;">
+                <div class="accordion">
+                    <button class="acc-btn">Nodus Limfa <i class="fas fa-chevron-down"></i></button>
+                    <div class="acc-content">
+                        <p>Terdiri dari sekelompok limfosit padat tanpa kapsul fibrosa. Terletak di saluran pernapasan dan pencernaan, termasuk Amandel, Peyer's patch, dan MALT[cite: 8].</p>
+                        <img src="assets/images/gambar-13.7-nodus.jpg" alt="Nodus Limfatik" class="img-responsive">
+                    </div>
+
+                    <button class="acc-btn">Limpa (Spleen) <i class="fas fa-chevron-down"></i></button>
+                    <div class="acc-content">
+                        <p>Massa jaringan limfatik terbesar di tubuh. Memiliki pulpa putih (jaringan limfatik) dan pulpa merah (sinus vena). Berfungsi sebagai pabrik leukosit, gudang darah, dan tempat penghancur eritrosit[cite: 9, 12, 13].</p>
+                    </div>
+
+                    <button class="acc-btn">Tonsil <i class="fas fa-chevron-down"></i></button>
+                    <div class="acc-content">
+                        <p>Jaringan limfatik di sekitar faring yang menjadi pertahanan mukosa pertama. Berfungsi sebagai filter untuk menangkap bakteri dan virus[cite: 10, 14, 15].</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Mekanisme Imunitas -->
+    <section id="imunitas" class="container reveal">
+        <div class="section-title">
+            <h2>Mekanisme Imunitas</h2>
+            <p>Pertahanan Non-Spesifik dan Spesifik dalam melindungi tubuh</p>
+        </div>
+
+        <div class="stepper">
+            <div class="step">
+                <div class="step-icon">1</div>
+                <div class="step-content">
+                    <h3>Lini Pertama (Non-Spesifik)</h3>
+                    <p>Pertahanan fisik dan kimia di permukaan tubuh yang bekerja terus-menerus tanpa perlu infeksi[cite: 11, 12].</p>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody><tr><th>Komponen</th><th>Bentuk Pertahanan</th><th>Fungsi Utama</th></tr>
+                            <tr><td>Kulit</td><td>Keratinisasi[cite: 13]</td><td>Menghambat masuknya mikroorganisme[cite: 13]</td></tr>
+                            <tr><td>Saliva</td><td>Lisozim[cite: 13]</td><td>Menghambat dan merusak bakteri[cite: 13]</td></tr>
+                            <tr><td>Lambung</td><td>Lingkungan asam[cite: 13]</td><td>Menghancurkan mikroorganisme[cite: 13]</td></tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-icon">2</div>
+                <div class="step-content">
+                    <h3>Lini Kedua (Non-Spesifik)</h3>
+                    <p>Aktif ketika patogen melewati barier lini pertama[cite: 14].</p>
+                    <ul class="custom-list">
+                        <li><strong>Fagositosis:</strong> Sel seperti neutrofil dan makrofag menelan dan menghancurkan target dalam fagolisosom[cite: 14].</li>
+                        <li><strong>Inflamasi:</strong> Pelepasan histamin memicu kemerahan, panas, bengkak, dan nyeri untuk mengarahkan fagosit[cite: 15, 16].</li>
+                        <li><strong>Demam:</strong> Peningkatan suhu (set point) di hipotalamus akibat zat pirogen untuk menghambat patogen[cite: 16, 17].</li>
+                    </ul>
+                    <img src="assets/images/phagocytosis.jpg" alt="Mekanisme Fagositosis" class="img-responsive mt-1">
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-icon">3</div>
+                <div class="step-content">
+                    <h3>Imunitas Spesifik (Adaptif)</h3>
+                    <p>Mengenali antigen spesifik. Terdiri dari respons Seluler dan Humoral[cite: 18, 22].</p>
+                    <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+                        <div class="comparison-card">
+                            <h4><i class="fas fa-user-shield"></i> Seluler (Sel T)</h4>
+                            <p>Melibatkan <strong>Sel T Helper (CD4+)</strong> yang mengatur respons imun via sitokin, dan <strong>Sel T Sitotoksik (CD8+)</strong> yang menghancurkan sel terinfeksi[cite: 18, 19, 20].</p>
+                        </div>
+                        <div class="comparison-card">
+                            <h4><i class="fas fa-vial"></i> Humoral (Sel B)</h4>
+                            <p>Sel B teraktivasi berdiferensiasi menjadi sel plasma untuk memproduksi <strong>Antibodi</strong> yang spesifik mengikat patogen di cairan tubuh[cite: 22, 23].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Antibodi -->
+    <section id="antibodi" class="container bg-light reveal">
+        <div class="section-title">
+            <h2>Jenis-Jenis Antibodi (Imunoglobulin)</h2>
+            <p>Protein glikoprotein pelindung yang disekresikan sel plasma[cite: 24, 25]</p>
+        </div>
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <div class="info-card center-text">
+                <h3 class="highlight-text">IgG</h3>
+                <p>Monomer. Antibodi utama respons sekunder, dapat melewati plasenta[cite: 25, 26].</p>
+            </div>
+            <div class="info-card center-text">
+                <h3 class="highlight-text">IgM</h3>
+                <p>Pentamer. Antibodi pertama pada respons primer. Sangat efektif aktivasi komplemen[cite: 25, 26].</p>
+            </div>
+            <div class="info-card center-text">
+                <h3 class="highlight-text">IgA</h3>
+                <p>Dimer (di mukosa). Terdapat pada mukus, saliva, air mata, dan ASI[cite: 25, 26].</p>
+            </div>
+            <div class="info-card center-text">
+                <h3 class="highlight-text">IgE</h3>
+                <p>Monomer. Berperan utama dalam respons alergi (degranulasi sel mast)[cite: 26].</p>
+            </div>
+            <div class="info-card center-text">
+                <h3 class="highlight-text">IgD</h3>
+                <p>Monomer. Reseptor pada sel B naif untuk proses aktivasi[cite: 26].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Kelainan -->
+    <section id="kelainan" class="container reveal">
+        <div class="section-title">
+            <h2>Kelainan Sistem Imunitas</h2>
+            <p>Kondisi saat komponen pertahanan tubuh mengalami gangguan fungsi[cite: 27]</p>
+        </div>
+        <div class="card-grid">
+            <div class="info-card danger-card">
+                <h3>Imunodefisiensi</h3>
+                <p>Sistem imun gagal menjalankan fungsi. Primer (genetik/intrinsik) atau Sekunder (akibat faktor luar seperti HIV/AIDS yang menyerang sel T helper)[cite: 27, 28].</p>
+            </div>
+            <div class="info-card danger-card">
+                <h3>Hipersensitivitas</h3>
+                <p>Respons imun berlebihan penyebab kerusakan jaringan. Tipe I (alergi IgE), Tipe II (IgG sitotoksik), Tipe III (kompleks imun), dan Tipe IV (seluler/Sel T)[cite: 28, 29].</p>
+            </div>
+            <div class="info-card danger-card">
+                <h3>Penyakit Autoimun</h3>
+                <p>Sistem imun menyerang komponen tubuh sendiri akibat hilangnya toleransi imun (contoh: Rheumatoid arthritis, Systemic lupus erythematosus)[cite: 30].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz -->
+    
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="bttBtn"><i class="fas fa-arrow-up"></i></a>
+
+    <footer>
+        <p>© 2026 BioEdu - Sistem Limfatik &amp; Imunitas. Dibuat berdasarkan Makalah Anfistuman Kel 11 Materi 8.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body></html>
