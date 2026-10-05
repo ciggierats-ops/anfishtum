@@ -240,11 +240,20 @@ body {
     height: auto;
     border-radius: var(--radius);
 }
+.topic-illustration {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    max-height: 320px;
+    object-fit: contain;
+    margin: 1rem auto 0;
+}
 .caption {
     font-size: 0.85rem;
     color: var(--gray);
     margin-top: 0.5rem;
     font-style: italic;
+    text-align: center;
 }
 .radius {
     border-radius: var(--radius);
